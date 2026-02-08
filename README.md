@@ -1,4 +1,10 @@
 ![CPAP running custom firmware](docs/images/airsense-hacked.jpg)
+# Probably compatible with all devices running SX567-0401
+This firmware patcher has its fingerprinting disabled. Use at your own risk. Do not attempt to patch devices not running SW SX567-0401. You WILL brick your device.
+
+# Stock look and feel
+The "Hacked!" warnings have been removed and the custom palette has been taken out as well. Your machine will have many extra modes but it will not be noticeably different from a stock machine because the customizations are not applied. You can change the `patch-airsense` as you see fit.
+
 # Jailbreaking CPAP machines to make temporary ventilators
 
 This is the README for the internals of ResMed CPAP jailbreak works;
