@@ -27,35 +27,9 @@ The `Makefile` has a short explanation of how to do this; the
 `patch-airsense` file will also need to be updated to patch the
 binary file into the firmware.
 
-# Helpful GDB commands:
+# How to install
 
-Start `gdb`, connect to the OpenOCD server and disassemble the current address:
-```
-gdb-multiarch -iex 'target remote localhost:3333'
-display/i $pc
-```
-
-Reboot the device and halt before running any code:
-```
-mon reset halt
-```
-
-Unlock the STM32 and flash the new firmware into it:
-```
-mon stm32f2x options_write 0 0x2c ; reset halt ;  flash write_image erase stm32-unlocked.bin 0x8000000
-```
-
-Read the Therapy Manager floating point variables, or a specific one like the target
-pressure (`0x2d`):
-```
-x/200f 0x2000e948
-x/f (0x2000e948 + 4 * 0x2a)
-```
-
-Read the Therapy Manager integer variables, or a specific one like the current mode (`0x6F`):
-```
-x/200xw 0x2000e750
-x/xw (0x2000e750 + 4 * 0x6F)
-```
+Follow the instructions here but use this Airbreak Plus repository instead:
+[https://airbreak.dev/firmware/](https://airbreak.dev/firmware/)
 
 
