@@ -30,6 +30,8 @@ check_hash() {
 		echo "$IN: VAuto 37051-SX567-0401 binary identified"
 	elif [[ $HASH == "533b91127aa22e05b933db203ad56c449dc12a8c3fd62f57bd88c472a8061775" ]] ; then
 		echo "$IN: AutoSet 37028-SX567-0401 binary identified"
+	elif [[ $HASH == "24a219b06a597f3f0f51bfe2a51786ed830f68bfc5bcf74bc5700ba69d401a20" ]] ; then
+		echo "$IN: VAuto 37094-SX567-0401 binary identified"
 	else 
 	    die "$IN: Unidentified binary. Confirm its version is 0401 and that its binary has the same section layout"
 	fi
