@@ -1,4 +1,3 @@
-![CPAP running custom firmware](docs/images/airsense-hacked.jpg)
 # Probably compatible with all devices running SX567-0401
 This firmware patcher has its fingerprinting disabled. Use at your own risk. Do not attempt to patch devices not running SW SX567-0401. You WILL brick your device.
 
