@@ -33,7 +33,7 @@ check_hash() {
 	elif [[ $HASH == "24a219b06a597f3f0f51bfe2a51786ed830f68bfc5bcf74bc5700ba69d401a20" ]] ; then
 		echo "$IN: VAuto 37094-SX567-0401 binary identified"
 	else 
-	    die "$IN: Unidentified binary. Confirm its version is 0401 and that its binary has the same section layout"
+	    echo "$IN: Unidentified binary. Proceed at your own risk! Confirm its version is 0401 and that its binary has the same section layout"
 	fi
 }
 
@@ -286,7 +286,7 @@ asv_disable_backup_rate () {
 check_hash
 
 patch_tamper
-patch_strings
+# patch_strings
 
 if [[ $PATCH_BACKUP_RATE == 1 ]] ; then
 	asv_disable_backup_rate
@@ -303,7 +303,7 @@ gui_config # 64
 
 asv_unlock_ps_range
 
-custom_palette #128
+# custom_palette #128
 
 # echo "Built with FLAGS=$BUILD_FLAGS"
 #FLAGSTR=$(printf 'FLAGS=0x%02x' $BUILD_FLAGS)
